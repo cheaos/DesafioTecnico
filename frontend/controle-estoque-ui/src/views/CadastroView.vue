@@ -85,7 +85,7 @@ input, select {
   font-size: 1rem;
 }
 h1 {
-  color:rgb(128, 228, 228);
+  color:aqua;
 }
 button {
   padding: 0.75rem 1.5rem;

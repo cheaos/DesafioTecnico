@@ -71,6 +71,10 @@ const excluirProduto = async (id) => {
         </tr>
       </tbody>
     </table>
+
+    <footer class="page-footer">
+      <p>Desenvolvido por: Mateus Jasper Anulhak</p>
+    </footer>
   </main>
 </template>
 
@@ -99,6 +103,9 @@ td {
 }
 thead {
   background-color: #f2f2f2;
+}
+h1 {
+  color:aqua;
 }
 
 /* formatação para o botão de excluir */

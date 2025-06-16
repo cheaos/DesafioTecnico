@@ -1,4 +1,4 @@
-@ControleProdutoEstoque_HostAddress = http://localhost:5221
+@ControleProdutoEstoque_HostAddress = http://localhost:5173
 
 GET {{ControleProdutoEstoque_HostAddress}}/weatherforecast/
 Accept: application/json
