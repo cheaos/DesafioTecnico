@@ -2,6 +2,8 @@ using Api.Models;
 using Api.Data;
 using Microsoft.EntityFrameworkCore;
 
+namespace Api.Repositories;
+
 public class ProdutoRepository{
     private readonly AppDbContext _context;
 
@@ -9,19 +11,24 @@ public class ProdutoRepository{
         _context = context;
     }
 
-    public async Task<Produto?> GetByIdAsync(int id) =>
+    public async Task<Produto?> BuscarPorIdAsync(int id) =>
         await _context.Produtos.FindAsync(id);
 
-    public async Task<List<Produto>> GetAllAsync() =>
+    public async Task<List<Produto>> BuscarTodosAsync() =>
         await _context.Produtos.ToListAsync();
 
-    public async Task AddAsync(Produto produto){
+    public async Task AdicionarAsync(Produto produto){
         _context.Produtos.Add(produto);
         await _context.SaveChangesAsync();
     }
 
-    public async Task UpdateAsync(Produto produto){
+    public async Task AtualizarAsync(Produto produto){
         _context.Produtos.Update(produto);
+        await _context.SaveChangesAsync();
+    }
+
+     public async Task RemoverAsync(Produto produto) {
+        _context.Produtos.Remove(produto);
         await _context.SaveChangesAsync();
     }
 }
