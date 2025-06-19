@@ -1,3 +1,10 @@
+Observações JV
+
+- Mandei no arquivo ControleEstoqueDB.txt a criação das duas tabelas no banco, utilizei o PostgreeSQL
+- Separado as duas pastas de backend e frontend (ControleEstoque, ControleEstoqueFront)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 💼 Desafio Técnico - Controle de Produtos e Estoque
 
 📌 Como Participar - Faça um fork deste repositório em sua conta do GitHub.
