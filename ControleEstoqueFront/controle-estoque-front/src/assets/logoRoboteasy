@@ -1,0 +1,5 @@
+<template>
+  <div>
+    <img src="https://roboteasy.tech/wp-content/uploads/2023/04/roboteasy.png" alt="Logo Roboteasy" />
+  </div>
+</template>
